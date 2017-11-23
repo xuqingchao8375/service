@@ -14,9 +14,20 @@ public class TestService {
     @Test
     public void testhelloworld(){
 
-        String expactReturnValue = "hello"; // You should put the expect String type value here.
+        String expactReturnValue = "hello,xuqingchao,welcome to ServiceStage"; // You should put the expect String type value here.
 
-        String returnValue = serviceDelegate.helloworld("hello");
+        String returnValue = serviceDelegate.helloworld("hello,xuqingchao");
+
+        assertEquals(expactReturnValue, returnValue);
+    }
+    
+    @Test
+    public void testSayHi(){
+
+        String expactReturnValue = "hi,xuqingchao,welcome to ServiceStage~"; // You should put the expect String type value here.
+
+        //String returnValue = serviceDelegate.helloworld("hi,xuqingchao~");
+        String returnValue = csedemoImpl.sayHi("Hi ,xuqingchao~");
 
         assertEquals(expactReturnValue, returnValue);
     }
