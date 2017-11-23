@@ -9,12 +9,12 @@ public class ServiceDelegate implements Service {
     public String helloworld(String name){
 
         // Do Some Magic Here!
-        return "hi," + name + "Welcome to ServiceStag" ;
+        return name;
     }
     
     public String sayHi(String name){
 
         // Do Some Magic Here!
-        return "hi," + name + "Welcome to ServiceStag" ;
+        return name ;
     }
 }
