@@ -26,8 +26,7 @@ public class TestService {
 
         String expactReturnValue = "hi,xuqingchao,welcome to ServiceStage~"; // You should put the expect String type value here.
 
-        //String returnValue = serviceDelegate.helloworld("hi,xuqingchao~");
-        String returnValue = csedemoImpl.sayHi("Hi ,xuqingchao~");
+        String returnValue = serviceDelegate.sayHi("hi,xuqingchao~");
 
         assertEquals(expactReturnValue, returnValue);
     }
