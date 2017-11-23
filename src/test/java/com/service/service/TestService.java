@@ -22,7 +22,7 @@ public class TestService {
     }
     
     @Test
-    public void testSayHi(){
+    public void testsayHi(){
 
         String expactReturnValue = "hi,xuqingchao,welcome to ServiceStage~"; // You should put the expect String type value here.
 
